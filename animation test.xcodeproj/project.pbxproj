@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0742B01D8374716AE7CE6D96 /* Pods_animation_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB74EE7C078B7088292B09E3 /* Pods_animation_test.framework */; };
+		5E1260D6231F985C003FF871 /* BasicsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260D5231F985C003FF871 /* BasicsCollectionViewController.swift */; };
+		5E1260D8231F99EE003FF871 /* BasicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260D7231F99EE003FF871 /* BasicsCollectionViewCell.swift */; };
+		5E1260DA231FA13F003FF871 /* BasicsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260D9231FA13F003FF871 /* BasicsHeaderView.swift */; };
+		5E1260DC231FA14D003FF871 /* BasicsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260DB231FA14D003FF871 /* BasicsFooterView.swift */; };
 		5E36B985231DFBE20026A827 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36B984231DFBE20026A827 /* TableViewController.swift */; };
+		5E5C7CB12320E91E0030553A /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */; };
+		5E5C7CB32320E9B40030553A /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C7CB22320E9B40030553A /* CardLayout.swift */; };
 		5EF332462200009A008B62B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF332452200009A008B62B9 /* AppDelegate.swift */; };
 		5EF3324B2200009A008B62B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF332492200009A008B62B9 /* Main.storyboard */; };
 		5EF3324D2200009C008B62B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3324C2200009C008B62B9 /* Assets.xcassets */; };
@@ -17,7 +23,13 @@
 
 /* Begin PBXFileReference section */
 		0356C7D3E9608B6465B93829 /* Pods-animation test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-animation test/Pods-animation test.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1260D5231F985C003FF871 /* BasicsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsCollectionViewController.swift; sourceTree = "<group>"; };
+		5E1260D7231F99EE003FF871 /* BasicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E1260D9231FA13F003FF871 /* BasicsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsHeaderView.swift; sourceTree = "<group>"; };
+		5E1260DB231FA14D003FF871 /* BasicsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsFooterView.swift; sourceTree = "<group>"; };
 		5E36B984231DFBE20026A827 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewController.swift; sourceTree = "<group>"; };
+		5E5C7CB22320E9B40030553A /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 		5EF332422200009A008B62B9 /* animation test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animation test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF332452200009A008B62B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF3324A2200009A008B62B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5E1260D3231F981F003FF871 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E36B984231DFBE20026A827 /* TableViewController.swift */,
+				5E1260D5231F985C003FF871 /* BasicsCollectionViewController.swift */,
+				5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E1260D4231F9828003FF871 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E1260D7231F99EE003FF871 /* BasicsCollectionViewCell.swift */,
+				5E5C7CB22320E9B40030553A /* CardLayout.swift */,
+				5E1260D9231FA13F003FF871 /* BasicsHeaderView.swift */,
+				5E1260DB231FA14D003FF871 /* BasicsFooterView.swift */,
+			);
+			name = View;
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5EF332392200009A008B62B9 = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +106,8 @@
 			children = (
 				5EF332452200009A008B62B9 /* AppDelegate.swift */,
 				5EF332492200009A008B62B9 /* Main.storyboard */,
-				5E36B984231DFBE20026A827 /* TableViewController.swift */,
+				5E1260D4231F9828003FF871 /* View */,
+				5E1260D3231F981F003FF871 /* Controller */,
 				5EF3324C2200009C008B62B9 /* Assets.xcassets */,
 				5EF3324E2200009C008B62B9 /* LaunchScreen.storyboard */,
 				5EF332512200009C008B62B9 /* Info.plist */,
@@ -208,8 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5C7CB12320E91E0030553A /* CardCollectionViewController.swift in Sources */,
+				5E1260DC231FA14D003FF871 /* BasicsFooterView.swift in Sources */,
 				5E36B985231DFBE20026A827 /* TableViewController.swift in Sources */,
+				5E5C7CB32320E9B40030553A /* CardLayout.swift in Sources */,
+				5E1260DA231FA13F003FF871 /* BasicsHeaderView.swift in Sources */,
+				5E1260D8231F99EE003FF871 /* BasicsCollectionViewCell.swift in Sources */,
 				5EF332462200009A008B62B9 /* AppDelegate.swift in Sources */,
+				5E1260D6231F985C003FF871 /* BasicsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
