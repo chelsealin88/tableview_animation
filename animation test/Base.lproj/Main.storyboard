@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="9oa-YL-76h" style="IBUITableViewCellStyleDefault" id="oxn-eP-rXa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="Fen-nh-amB" style="IBUITableViewCellStyleDefault" id="oxn-eP-rXa">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oxn-eP-rXa" id="SNu-FY-icf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9oa-YL-76h">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fen-nh-amB">
+                                            <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -41,9 +41,7 @@
                             <outlet property="delegate" destination="seW-jr-diZ" id="RyS-Yb-9kb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ste-cA-toW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6x1-ve-Jrf"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Ste-cA-toW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhQ-Uw-i1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +50,7 @@
         <!--Basics Collection View Controller-->
         <scene sceneID="esh-Q8-HxZ">
             <objects>
-                <collectionViewController id="ieA-WR-IIt" customClass="BasicsCollectionViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="BasicsCollectionViewController" id="ieA-WR-IIt" customClass="BasicsCollectionViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FyY-GJ-6XO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,19 +127,14 @@
         <!--Card Collection View Controller-->
         <scene sceneID="YMB-91-KO6">
             <objects>
-                <collectionViewController id="F7I-Iu-8QS" customClass="CardCollectionViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="CardCollectionViewController" id="F7I-Iu-8QS" customClass="CardCollectionViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pfd-xW-Gu5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xlA-5w-jju">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
+                        <collectionViewLayout key="collectionViewLayout" id="zAL-11-R5V" customClass="CardLayout" customModule="animation_test" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DtE-Nk-duN">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="basicsCell" id="DtE-Nk-duN" customClass="BasicsCollectionViewCell" customModule="animation_test" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

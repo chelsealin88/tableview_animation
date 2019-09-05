@@ -10,4 +10,5 @@ import UIKit
 
 class BasicsCollectionViewCell: UICollectionViewCell {
     
+    static let reuseID = "basicsCell"
 }

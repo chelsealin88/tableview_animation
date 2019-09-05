@@ -50,20 +50,23 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        switch indexPath.section {
+        switch indexPath.row {
         case Section.basics.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "BasicsCollectionViewController") as! BasicsCollectionViewController
-            vc.navigationController?.pushViewController(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
+        case Section.card.rawValue:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CardCollectionViewController") as! CardCollectionViewController
+            navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
+        
     }
     
-    
-    @IBAction func refreshBtn(_ sender: Any) {
-        animateTable()
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
     }
-    
+  
     func animateTable() {
         
         tableView.reloadData()

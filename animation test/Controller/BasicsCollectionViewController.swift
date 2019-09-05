@@ -42,7 +42,7 @@ class BasicsCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "basicsCell", for: indexPath)  as! BasicsCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BasicsCollectionViewCell.reuseID, for: indexPath)  as! BasicsCollectionViewCell
         cell.backgroundColor = colors[indexPath.section][indexPath.row]
         
         // Configure the cell
