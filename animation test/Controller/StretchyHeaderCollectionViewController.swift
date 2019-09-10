@@ -34,7 +34,7 @@ class StretchyHeaderCollectionViewController: UICollectionViewController {
     
     fileprivate func setupCollectionView() {
         collectionView.register(ImageHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
-        
+        collectionView.contentInsetAdjustmentBehavior = .never
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellid)
     }
     
