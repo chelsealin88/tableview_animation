@@ -14,8 +14,6 @@ class StretchyHeaderCollectionViewController: UICollectionViewController {
     fileprivate let cellid = "cell"
     fileprivate let headerId = "headerId"
     fileprivate let padding : CGFloat = 16
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +24,7 @@ class StretchyHeaderCollectionViewController: UICollectionViewController {
     }
     
     fileprivate func setupCollectionViewLayout() {
+        
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.sectionInset = .init(top: padding, left: padding, bottom: padding, right: padding)
         }
@@ -33,6 +32,7 @@ class StretchyHeaderCollectionViewController: UICollectionViewController {
     
     
     fileprivate func setupCollectionView() {
+        
         collectionView.register(ImageHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView.contentInsetAdjustmentBehavior = .never
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellid)

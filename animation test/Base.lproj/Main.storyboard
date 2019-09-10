@@ -198,6 +198,35 @@
             </objects>
             <point key="canvasLocation" x="4463" y="87"/>
         </scene>
+        <!--Water Falls Collection View Controller-->
+        <scene sceneID="Wr7-cY-8Is">
+            <objects>
+                <collectionViewController storyboardIdentifier="WaterFallsCollectionViewController" id="ITv-OR-o3m" customClass="WaterFallsCollectionViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1MH-Cc-UcL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewLayout key="collectionViewLayout" id="dXf-Gf-Ucd" customClass="WaterFallsLayout" customModule="animation_test" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="basicsCell" id="B7M-Wd-oc5" customClass="BasicsCollectionViewCell" customModule="animation_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ITv-OR-o3m" id="hrJ-fB-QMU"/>
+                            <outlet property="delegate" destination="ITv-OR-o3m" id="LGY-yk-LIZ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHB-j1-9oK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5174" y="88"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="iZn-7l-zNb">
             <objects>

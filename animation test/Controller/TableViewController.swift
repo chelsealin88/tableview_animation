@@ -66,6 +66,9 @@ class TableViewController: UITableViewController {
         case Section.expandHeader.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "StretchyHeaderCollectionViewController") as! StretchyHeaderCollectionViewController
             navigationController?.pushViewController(vc, animated: true)
+        case Section.waterFall.rawValue:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "WaterFallsCollectionViewController") as! WaterFallsCollectionViewController
+            navigationController?.pushViewController(vc, animated: true)
             
         default:
             break
