@@ -55,19 +55,21 @@ class BasicsCollectionViewController: UICollectionViewController {
                                  at indexPath: IndexPath) -> UICollectionReusableView {
         
         switch kind {
+            
         case UICollectionView.elementKindSectionHeader:
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as! BasicsHeaderView
             view.headerLabel.text = "HEADER -- \(indexPath.section)"
             return view
+            
         case UICollectionView.elementKindSectionFooter:
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterView", for: indexPath) as! BasicsFooterView
             view.footerLabel.text = "FOOTER -- \(indexPath.section)"
             return view
+            
         default:
             fatalError("No such kind")
         }
-        
-        
+    
     }
     
     @objc func longPressed(_ gesture: UILongPressGestureRecognizer) {
@@ -213,7 +215,7 @@ class DataManager {
         
         var colors = [UIColor]()
         
-        for _ in 0..<count{
+        for _ in 0..<count {
             colors.append(UIColor.randomColor())
         }
         return colors

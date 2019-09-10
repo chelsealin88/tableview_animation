@@ -20,8 +20,6 @@ class CardCollectionViewController: UICollectionViewController {
         
     }
 
-   
-
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -37,6 +35,7 @@ class CardCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
     
 
 }

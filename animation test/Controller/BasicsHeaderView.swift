@@ -9,6 +9,8 @@
 import UIKit
 
 class BasicsHeaderView: UICollectionReusableView {
+    
     @IBOutlet weak var headerLabel: UILabel!
+    static let reuseID = "HeaderView"
     
 }

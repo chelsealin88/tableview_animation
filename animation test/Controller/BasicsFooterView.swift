@@ -11,4 +11,6 @@ import UIKit
 class BasicsFooterView: UICollectionReusableView {
         
     @IBOutlet weak var footerLabel: UILabel!
+    
+    static let reuseID = "FooterView"
 }

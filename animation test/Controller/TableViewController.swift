@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var myarray = ["Collection View基礎佈局", "卡片佈局", "伸縮Header", "瀑布流", "標籤效果"]
+    var myarray = ["Collection View基礎佈局", "卡片佈局", "伸縮自如的Header", "瀑布流", "標籤效果"]
     
     enum Section: Int {
         case basics = 0
@@ -24,6 +24,10 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         animateTable()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTable()
     }
 
     // MARK: - Table view data source
@@ -54,9 +58,15 @@ class TableViewController: UITableViewController {
         case Section.basics.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "BasicsCollectionViewController") as! BasicsCollectionViewController
             navigationController?.pushViewController(vc, animated: true)
+            
         case Section.card.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "CardCollectionViewController") as! CardCollectionViewController
             navigationController?.pushViewController(vc, animated: true)
+            
+        case Section.expandHeader.rawValue:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "StretchyHeaderCollectionViewController") as! StretchyHeaderCollectionViewController
+            navigationController?.pushViewController(vc, animated: true)
+            
         default:
             break
         }
@@ -75,14 +85,14 @@ class TableViewController: UITableViewController {
         let tableHeight: CGFloat = tableView.bounds.size.height
         
         for i in cells {
-            let cell: UITableViewCell = i as UITableViewCell
+            let cell : UITableViewCell = i as UITableViewCell
             cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
         }
         
         var index = 0
         
         for i in cells {
-            let cell: UITableViewCell = i as UITableViewCell
+            let cell : UITableViewCell = i as UITableViewCell
           
             UIView.animate(withDuration: 1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .init() , animations: {
                 cell.transform = CGAffineTransform(translationX: 0, y: 0)
