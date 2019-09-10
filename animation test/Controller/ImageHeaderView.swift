@@ -20,7 +20,7 @@ class ImageHeaderView: UICollectionReusableView {
         super.init(frame: frame)
         
         addSubview(imageView)
-        
+        imageView.fillSuperView()
     }
     
     required init?(coder aDecoder: NSCoder) {
