@@ -63,6 +63,40 @@
             </objects>
             <point key="canvasLocation" x="1905" y="833"/>
         </scene>
+        <!--Present View View Controller-->
+        <scene sceneID="dHk-nr-Sq6">
+            <objects>
+                <viewController id="dHj-gI-Aen" customClass="PresentViewViewController" customModule="animation_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BcB-FA-qkm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-pk-nNy">
+                                <rect key="frame" x="184" y="163" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="mybutton:" destination="dHj-gI-Aen" eventType="touchUpInside" id="c5k-kR-Cn0"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-qX-eR8">
+                                <rect key="frame" x="0.0" y="863" width="414" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Haa-qQ-tMp"/>
+                    </view>
+                    <connections>
+                        <outlet property="mybutton" destination="9gB-pk-nNy" id="ztI-Ny-847"/>
+                        <outlet property="presentView" destination="aWX-qX-eR8" id="gZM-ho-Cc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSM-91-02f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3756.521739130435" y="975"/>
+        </scene>
         <!--Basics Collection View Controller-->
         <scene sceneID="esh-Q8-HxZ">
             <objects>

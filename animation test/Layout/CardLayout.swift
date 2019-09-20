@@ -41,10 +41,12 @@ class CardLayout : UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        
         guard let collectionView = self.collectionView else { return nil }
         guard let visibleAttributes = super.layoutAttributesForElements(in: rect) else { return nil }
         let centerX = collectionView.contentOffset.x + collectionView.bounds.size.width/2
         for attribute in visibleAttributes {
+            
             // 獲取cell中心距離 屏幕中心位置的絕對值。
             let distance = abs(attribute.center.x - centerX)
             // 用上一步獲取的值，除以屏幕寬得到一个縮放比例

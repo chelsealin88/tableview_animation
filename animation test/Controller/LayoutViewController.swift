@@ -30,7 +30,6 @@ class LayoutViewController: UIViewController {
         
         func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding : UIEdgeInsets = .zero, size : CGSize = .zero) {
             
-            
             translatesAutoresizingMaskIntoConstraints = false
             
             if let top = top {
@@ -55,8 +54,7 @@ class LayoutViewController: UIViewController {
             if size.height != 0 {
                 heightAnchor.constraint(equalToConstant: size.height).isActive = true
             }
-            
-            
+        
         }
     
 }

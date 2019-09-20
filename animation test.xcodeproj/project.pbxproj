@@ -12,6 +12,7 @@
 		5E1260D8231F99EE003FF871 /* BasicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260D7231F99EE003FF871 /* BasicsCollectionViewCell.swift */; };
 		5E1260DA231FA13F003FF871 /* BasicsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260D9231FA13F003FF871 /* BasicsHeaderView.swift */; };
 		5E1260DC231FA14D003FF871 /* BasicsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1260DB231FA14D003FF871 /* BasicsFooterView.swift */; };
+		5E2CC5C32334BEB400E9D90E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CC5C22334BEB400E9D90E /* UIColor.swift */; };
 		5E36B985231DFBE20026A827 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36B984231DFBE20026A827 /* TableViewController.swift */; };
 		5E4E266223272E7400A9E798 /* StretchyHeaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E266123272E7400A9E798 /* StretchyHeaderCollectionViewController.swift */; };
 		5E4E26642327396F00A9E798 /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E26632327396F00A9E798 /* ImageHeaderView.swift */; };
@@ -19,6 +20,7 @@
 		5E4E266A2327497500A9E798 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E26692327497500A9E798 /* LayoutViewController.swift */; };
 		5E4E266C2327535300A9E798 /* WaterFallsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E266B2327535300A9E798 /* WaterFallsCollectionViewController.swift */; };
 		5E4E266E232755C500A9E798 /* WaterFallsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E266D232755C500A9E798 /* WaterFallsLayout.swift */; };
+		5E4E8FBB2329E3FD0071CE05 /* PresentViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E8FBA2329E3FD0071CE05 /* PresentViewViewController.swift */; };
 		5E5C7CB12320E91E0030553A /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */; };
 		5E5C7CB32320E9B40030553A /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C7CB22320E9B40030553A /* CardLayout.swift */; };
 		5EF332462200009A008B62B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF332452200009A008B62B9 /* AppDelegate.swift */; };
@@ -33,6 +35,7 @@
 		5E1260D7231F99EE003FF871 /* BasicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		5E1260D9231FA13F003FF871 /* BasicsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsHeaderView.swift; sourceTree = "<group>"; };
 		5E1260DB231FA14D003FF871 /* BasicsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsFooterView.swift; sourceTree = "<group>"; };
+		5E2CC5C22334BEB400E9D90E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5E36B984231DFBE20026A827 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5E4E266123272E7400A9E798 /* StretchyHeaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderCollectionViewController.swift; sourceTree = "<group>"; };
 		5E4E26632327396F00A9E798 /* ImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		5E4E26692327497500A9E798 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		5E4E266B2327535300A9E798 /* WaterFallsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsCollectionViewController.swift; sourceTree = "<group>"; };
 		5E4E266D232755C500A9E798 /* WaterFallsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsLayout.swift; sourceTree = "<group>"; };
+		5E4E8FBA2329E3FD0071CE05 /* PresentViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewViewController.swift; sourceTree = "<group>"; };
 		5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewController.swift; sourceTree = "<group>"; };
 		5E5C7CB22320E9B40030553A /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 		5EF332422200009A008B62B9 /* animation test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "animation test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +85,7 @@
 				5E5C7CB02320E91E0030553A /* CardCollectionViewController.swift */,
 				5E4E266123272E7400A9E798 /* StretchyHeaderCollectionViewController.swift */,
 				5E4E266B2327535300A9E798 /* WaterFallsCollectionViewController.swift */,
+				5E4E8FBA2329E3FD0071CE05 /* PresentViewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +101,14 @@
 			);
 			name = View;
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E2CC5C12334BDA200E9D90E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E2CC5C22334BEB400E9D90E /* UIColor.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5EA8195D232234250037AB64 /* Layout */ = {
@@ -131,6 +144,7 @@
 			children = (
 				5EF332452200009A008B62B9 /* AppDelegate.swift */,
 				5EF332492200009A008B62B9 /* Main.storyboard */,
+				5E2CC5C12334BDA200E9D90E /* Model */,
 				5EA8195D232234250037AB64 /* Layout */,
 				5E1260D4231F9828003FF871 /* View */,
 				5E1260D3231F981F003FF871 /* Controller */,
@@ -274,6 +288,7 @@
 				5E1260DC231FA14D003FF871 /* BasicsFooterView.swift in Sources */,
 				5E36B985231DFBE20026A827 /* TableViewController.swift in Sources */,
 				5E4E26642327396F00A9E798 /* ImageHeaderView.swift in Sources */,
+				5E2CC5C32334BEB400E9D90E /* UIColor.swift in Sources */,
 				5E5C7CB32320E9B40030553A /* CardLayout.swift in Sources */,
 				5E4E266C2327535300A9E798 /* WaterFallsCollectionViewController.swift in Sources */,
 				5E1260DA231FA13F003FF871 /* BasicsHeaderView.swift in Sources */,
@@ -282,6 +297,7 @@
 				5E4E266E232755C500A9E798 /* WaterFallsLayout.swift in Sources */,
 				5E1260D6231F985C003FF871 /* BasicsCollectionViewController.swift in Sources */,
 				5E4E266A2327497500A9E798 /* LayoutViewController.swift in Sources */,
+				5E4E8FBB2329E3FD0071CE05 /* PresentViewViewController.swift in Sources */,
 				5E4E266223272E7400A9E798 /* StretchyHeaderCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@ class TableViewController: UITableViewController {
     
     var myarray = ["Collection View基礎佈局", "卡片佈局", "伸縮自如的Header", "瀑布流", "標籤效果"]
     
+    // cell Section
     enum Section: Int {
         case basics = 0
         case card
@@ -46,9 +47,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = myarray[indexPath.row]
-
+        
         // Configure the cell...
-
         return cell
     }
     
@@ -62,10 +62,11 @@ class TableViewController: UITableViewController {
         case Section.card.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "CardCollectionViewController") as! CardCollectionViewController
             navigationController?.pushViewController(vc, animated: true)
-            
+
         case Section.expandHeader.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "StretchyHeaderCollectionViewController") as! StretchyHeaderCollectionViewController
             navigationController?.pushViewController(vc, animated: true)
+            
         case Section.waterFall.rawValue:
             let vc = storyboard?.instantiateViewController(withIdentifier: "WaterFallsCollectionViewController") as! WaterFallsCollectionViewController
             navigationController?.pushViewController(vc, animated: true)

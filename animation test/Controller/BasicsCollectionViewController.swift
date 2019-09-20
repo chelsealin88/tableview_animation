@@ -120,7 +120,7 @@ extension BasicsCollectionViewController : UICollectionViewDelegateFlowLayout {
         }
         
     }
-    // 设置 minimumLineSpacing
+    // 設置 minimumLineSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         switch (section) {
@@ -132,7 +132,7 @@ extension BasicsCollectionViewController : UICollectionViewDelegateFlowLayout {
             return 5
         }
     }
-    // 设置 minimumInteritemSpacing
+    // 設置 minimumInteritemSpacing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
         if section == 0 {
@@ -159,7 +159,7 @@ extension BasicsCollectionViewController : UICollectionViewDelegateFlowLayout {
         }
     
     }
-    // 设置footer size
+    // 設置footer size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         let width = view.bounds.width
         return CGSize(width: width, height: 20)
@@ -214,7 +214,6 @@ class DataManager {
     func generalColors(_ count: Int) -> [UIColor] {
         
         var colors = [UIColor]()
-        
         for _ in 0..<count {
             colors.append(UIColor.randomColor())
         }

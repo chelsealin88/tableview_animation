@@ -16,7 +16,7 @@ class WaterFallsCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colors = DataManager.shared.generalColors(15)
+        colors = DataManager.shared.generalColors(35)
         setupCollectionViewLayout()
 
     }
@@ -30,21 +30,18 @@ class WaterFallsCollectionViewController: UICollectionViewController {
    
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+
         return colors.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BasicsCollectionViewCell.reuseID, for: indexPath) as! BasicsCollectionViewCell
         cell.backgroundColor = colors[indexPath.row]
-    
-        // Configure the cell
-    
+        
         return cell
     }
 
 }
-
 
 extension WaterFallsCollectionViewController : UICollectionViewDelegateFlowLayout {
    
